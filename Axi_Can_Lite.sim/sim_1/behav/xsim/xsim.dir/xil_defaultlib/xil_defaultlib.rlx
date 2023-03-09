@@ -1,0 +1,11 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,,,,,,,
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sim_1/new/can_testbanch.v,1678001098,verilog,,,,can_testbanch,,,,,,,,
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/FPGA/fpga_top.sv,1677994372,systemVerilog,,D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/FPGA/uart_tx.sv,,fpga_top,,uvm,,,,,,
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/FPGA/uart_tx.sv,1675130344,systemVerilog,,,,uart_tx,,uvm,,,,,,
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/RTL/can_level_bit.sv,1677635865,systemVerilog,,D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/RTL/can_level_packet.sv,,can_level_bit,,uvm,,,,,,
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/RTL/can_level_packet.sv,1678000769,systemVerilog,,D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/RTL/can_top.sv,,can_level_packet,,uvm,,,,,,
+D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/RTL/can_top.sv,1677722228,systemVerilog,,D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sources_1/imports/FPGA/fpga_top.sv,,can_top,,uvm,,,,,,

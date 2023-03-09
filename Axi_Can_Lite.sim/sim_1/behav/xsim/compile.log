@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.srcs/sim_1/new/can_testbanch.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module can_testbanch
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
