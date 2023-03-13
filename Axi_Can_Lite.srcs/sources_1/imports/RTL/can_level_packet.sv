@@ -148,23 +148,22 @@ always @ (posedge clk or negedge rstn) // 组合逻辑块，处理前一帧接收是否有效，以
             rx_ack_latch <= rx_ack; // 更新ACK应答是否有效
     end
 
-always @ (posedge clk or negedge rstn) // 按时钟或复位信号变化时执行
-if(~rstn) begin // 复位
-{tx_done, tx_acked} <= 1'b0; // 传输完成标志位和应答标志位复位
-rx_valid_pre <= 1'b0; // 接收数据有效前导位复位
-{rx_id,rx_ide,rx_rtr,rx_len,rx_data,rx_crc} <= '0; // 接收数据相关变量复位
-bit_tx <= 1'b1; // 发送数据位复位
-tx_arbitrary <= 1'b0; // 发送任意位复位
-tx_crc <= '0; // 发送数据 CRC 校验码复位
-tx_shift <= '1; // 发送数据移位寄存器复位
-cnt <= 8'd0; // 计数器复位
-stat <= INIT; // 状态机状态复位
-end else begin // 正常工作状态
-{tx_done, tx_acked} <= 1'b0; // 传输完成标志位和应答标志位复位
-rx_valid_pre <= 1'b0; // 接收数据有效前导位复位
-        
-         if(bit_req) begin // 根据请求信号执行相应操作
-        bit_tx <= 1'b1; // 发送数据位复位
+          always @ (posedge clk or negedge rstn) // 按时钟或复位信号变化时执行
+                if(~rstn) begin // 复位
+                        {tx_done, tx_acked} <= 1'b0; // 传输完成标志位和应答标志位复位
+                        rx_valid_pre <= 1'b0; // 接收数据有效前导位复位
+                        {rx_id,rx_ide,rx_rtr,rx_len,rx_data,rx_crc} <= '0; // 接收数据相关变量复位
+                        bit_tx <= 1'b1; // 发送数据位复位
+                        tx_arbitrary <= 1'b0; // 发送任意位复位
+                        tx_crc <= '0; // 发送数据 CRC 校验码复位
+                        tx_shift <= '1; // 发送数据移位寄存器复位
+                        cnt <= 8'd0; // 计数器复位
+                        stat <= INIT; // 状态机状态复位
+        end else begin // 正常工作状态
+                        {tx_done, tx_acked} <= 1'b0; // 传输完成标志位和应答标志位复位
+                        rx_valid_pre <= 1'b0; // 接收数据有效前导位复位
+                 if(bit_req) begin // 根据请求信号执行相应操作
+                        bit_tx <= 1'b1; // 发送数据位复位
         
         case(stat) // 根据状态机状态执行相应操作
             INIT : begin // 初始状态
