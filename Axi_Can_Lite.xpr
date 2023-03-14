@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="54" Path="D:/2MASTER/Vivado_Project/Axi_Can_Lite/Axi_Can_Lite.xpr">
+<Project Version="7" Minor="54" Path="D:/2MASTER/Vivado_Project/Axi_can_lite_fullnote/GUUUUUU/Axi_Can_Lite.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="fb747954aaee4e34810d2266e11d93d4"/>
@@ -35,7 +35,9 @@
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
-    <Option Name="IPRepoPath" Val="$PPRDIR/../IP_CANLITE"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../IP_CAN_V7"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../IP_CAN_V6"/>
+    <Option Name="IPRepoPath" Val="$PPRDIR/../../IP_CANLITE"/>
     <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
     <Option Name="IPDefaultOutputPath" Val="$PGENDIR/sources_1"/>
     <Option Name="IPCachePermission" Val="read"/>
@@ -76,7 +78,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/RTL/can_level_bit.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../FPGA-CAN-main/FPGA-CAN-main/RTL/can_level_bit.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../FPGA-CAN-main/FPGA-CAN-main/RTL/can_level_bit.sv"/>
           <Attr Name="ImportTime" Val="1677635865"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -85,7 +87,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/RTL/can_level_packet.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../FPGA-CAN-main/FPGA-CAN-main/RTL/can_level_packet.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../FPGA-CAN-main/FPGA-CAN-main/RTL/can_level_packet.sv"/>
           <Attr Name="ImportTime" Val="1677646805"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -94,7 +96,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/RTL/can_top.sv">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../FPGA-CAN-main/FPGA-CAN-main/RTL/can_top.sv"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../FPGA-CAN-main/FPGA-CAN-main/RTL/can_top.sv"/>
           <Attr Name="ImportTime" Val="1677722228"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -119,7 +121,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../IP_CANLITE/component.xml">
+      <File Path="$PPRDIR/../../IP_CAN_V7/component.xml">
         <FileInfo SFType="IPXACT"/>
       </File>
       <Config>
@@ -185,7 +187,7 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="15">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu3eg-sfvc784-1-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu3eg-sfvc784-1-i" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" AutoIncrementalDir="$PPRDIR/../../Axi_Can_Lite/Axi_Can_Lite.srcs/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
         <Step Id="synth_design"/>
@@ -194,7 +196,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sfvc784-1-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu3eg-sfvc784-1-i" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" GenFullBitstream="true" AutoIncrementalDir="$PPRDIR/../../Axi_Can_Lite/Axi_Can_Lite.srcs/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
         <Step Id="init_design"/>

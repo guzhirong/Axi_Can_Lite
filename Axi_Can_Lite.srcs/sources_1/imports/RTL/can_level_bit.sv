@@ -29,15 +29,15 @@ initial req = 1'b0;      // 初始值，控制信息为0
 initial rbit = 1'b1;     // 初始值，上一位接收到的数据位为1
 
 reg        rx_buf = 1'b1;   // 输入缓冲区，初始值为1
-reg        rx_fall = 1'b0;  // 上升沿检测，初始值为0
-always @ (posedge clk or negedge rstn)  // 时钟上升沿或复位信号下降沿时执行
-    if(~rstn) begin   // 复位
-        rx_buf  <= 1'b1;  // 重置缓冲区为1
-        rx_fall <= 1'b0;  // 重置上升沿检测为0
-    end else begin     // 时钟上升沿
-        rx_buf  <= can_rx;               // 存储接收到的数据
-        rx_fall <= rx_buf & ~can_rx;     // 检测上升沿
-    end
+reg        rx_fall = 1'b1;  // 上升沿检测，初始值为0
+//always @ (posedge clk or negedge rstn)  // 时钟上升沿或复位信号下降沿时执行
+//    if(~rstn) begin   // 复位
+//        rx_buf  <= 1'b1;  // 重置缓冲区为1
+//        rx_fall <= 1'b0;  // 重置上升沿检测为0
+//    end else begin     // 时钟上升沿
+//        rx_buf  <= can_rx;               // 存储接收到的数据
+//        rx_fall <= rx_buf & ~can_rx;     // 检测上升沿
+//    end
 
 localparam [16:0] default_c_PTS_e  = {1'b0, default_c_PTS};    // 计算默认的时间段1长度
 localparam [16:0] default_c_PBS1_e = {1'b0, default_c_PBS1};   // 计算默认的时间段2长度
