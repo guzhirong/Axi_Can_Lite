@@ -1,4 +1,4 @@
-
+`timescale 1ns/1ps
 //--------------------------------------------------------------------------------------------------------
 // Module  : can_top
 // Type    : synthesizable, IP's top
@@ -13,8 +13,8 @@ module can_top #(
     parameter logic [10:0] LOCAL_ID      = 11'h456,//本地ID 11位短ID
     
     // recieve ID filter parameters
-    parameter logic [10:0] RX_ID_SHORT_FILTER = 11'h123,//接收 ID 短过滤器参数，位宽为 11
-    parameter logic [10:0] RX_ID_SHORT_MASK   = 11'h7ff,//接收 ID 短掩码参数
+    parameter logic [10:0] RX_ID_SHORT_FILTER = 11'h122,//接收 ID 短过滤器参数，位宽为 11
+    parameter logic [10:0] RX_ID_SHORT_MASK   = 11'h17e,//接收 ID 短掩码参数
     parameter logic [28:0] RX_ID_LONG_FILTER  = 29'h12345678,//接收 ID 短掩码参数
     parameter logic [28:0] RX_ID_LONG_MASK    = 29'h1fffffff,//接收 ID 长掩码参数
     

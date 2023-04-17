@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Apr  4 16:43:35 2023
+# Process ID: 17072
+# Current directory: D:/2MASTER/Vivado_Project/Axi_can_lite_fullnote/GUUUUUU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent21056 D:\2MASTER\Vivado_Project\Axi_can_lite_fullnote\GUUUUUU\Axi_Can_Lite.xpr
+# Log file: D:/2MASTER/Vivado_Project/Axi_can_lite_fullnote/GUUUUUU/vivado.log
+# Journal file: D:/2MASTER/Vivado_Project/Axi_can_lite_fullnote/GUUUUUU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/2MASTER/Vivado_Project/Axi_can_lite_fullnote/GUUUUUU/Axi_Can_Lite.xpr
+update_compile_order -fileset sources_1
